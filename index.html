@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Dashboard-dark.css" id="theme-style">
+    <link rel="stylesheet" href="CSS/Slider.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="theme-switcher">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle" checked> <!-- Set to checked for Dark Mode -->
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="dashboard">
+        <div class="card">
+            <a href="Short Stories/The Enigma/Episode One/E1P1.html">
+                <img src="Images/E1P1.png" alt="Story 1">
+                <h2>Episode One, Part One</h2>
+                <h3>The Forgotten Manuscript</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Short Stories/The Enigma/Episode One/E1P2.html">
+                <img src="Images/E1P2.png" alt="Story 2">
+                <h2>Episode One, Part Two</h2>
+                <h3>The Cryptic Diagrams</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Short Stories/The Enigma/Episode One/E1P3.html">
+                <img src="Images/E1P3.png" alt="Story 3">
+                <h2>Episode One, Part Three</h2>
+                <h3>Aversion</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Short Stories/The Enigma/Episode One/E1P4.html">
+                <img src="Images/E1P4.png" alt="Story 4">
+                <h2>Episode One, Part Four</h2>
+                <h3>The Vanishing</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Short Stories/The Enigma/Episode One/E1P5.html">
+                <img src="Images/E1P5.png" alt="Story 5">
+                <h2>Episode One, Part Five</h2>
+                <h3>The End</h3>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+        const themeStyle = document.getElementById("theme-style");
+
+        themeToggle.addEventListener("change", () => {
+            if (themeToggle.checked) {
+                themeStyle.href = "CSS/Dashboard-dark.css";
+            } else {
+                themeStyle.href = "CSS/Dashboard.css";
+            }
+        });
+    </script>
+</body>
+</html>

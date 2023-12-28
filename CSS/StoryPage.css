@@ -1,0 +1,52 @@
+/* Styles for the dark mode story page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ddd;
+}
+
+.story {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding-top: 150px;
+    font-size: 20px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2a2a2a;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.title {
+    font-size: 36px;
+    margin: 0;
+    color: #ddd;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin: 5px 0 10px;
+    color: #bbb;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Additional styles for the button hover effect */
+.back-button:hover {
+    background-color: #0056b3;
+}
